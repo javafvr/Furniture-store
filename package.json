@@ -1,0 +1,22 @@
+{
+  "name": "individuashka",
+  "version": "1.0.0",
+  "description": "individual furniture site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap4": "0.0.1-security",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
+    "gulp-pug": "^4.0.1"
+  }
+}
