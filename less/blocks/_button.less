@@ -1,6 +1,5 @@
 .button{
 	display: inline-block!important;
-	// height: 32px;
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -19,9 +18,63 @@
 	
 	&:hover{
 		cursor: pointer;
+		color: #FFF;
+		background-color: #000;
+	}
+
+	&--short{
+		position: relative;
+		display: none;
+		margin: 0;
+		padding: 0;
+		width: 48px;
+		height: 48px;
+		.fa{
+			padding: 0;
+			font-size: 28px;
+			font-weight: 700;
+			position: absolute;
+			top: 19%;
+			right: 50%;
+			-webkit-transform: translate(60%, 0);
+			   -moz-transform: translate(60%, 0);
+			    -ms-transform: translate(60%, 0);
+			     -o-transform: translate(60%, 0);
+			        transform: translate(60%, 0);
+		}
+
+		&:hover{
+			font-size: 28px;
+			font-weight: 700;
+		}
+	}
+	
+	&--link{
+		text-decoration: none;
+		padding: 0;
 		-webkit-box-shadow: none;
 		        box-shadow: none;
+		.fa{
+			padding: 0;
+			padding-left: 20px;
+			font-size: 20px;
+			font-weight: 700;
+			// position: absolute;
+			// top: 19%;
+			// right: 50%;
+			// -webkit-transform: translate(60%, 0);
+			//    -moz-transform: translate(60%, 0);
+			//     -ms-transform: translate(60%, 0);
+			//      -o-transform: translate(60%, 0);
+			//         transform: translate(60%, 0);
+		}
+
+		&:hover{
+			color: #000;
+			background-color: #FFF;
+		}
 	}
+
 }
 
 

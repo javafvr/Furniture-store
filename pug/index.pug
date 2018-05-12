@@ -59,10 +59,240 @@ body
 						a(href="#" title="showroom") Showroom
 					li.nav__list-item
 						a(href="#" title="contact") Contact
+	.featured-product.section
+		.container
+			.filter-block
+				ul.filter-block__block
+					li.filter-block__element
+						span(data-filter="all").filter-block__button.filter.filter-block__button.active Featured
+					li.filter-block__element
+						span(data-filter=".new").filter-block__button.filter New
+				.filter-block__more
+					a(href="#").button.button--link explore all
+						i.fa.fa-angle-right
+			.row#featured-products
+				.col-lg-3.mix.featured.new
+					.featured-product__item
+						img(src="img/products/product-1.jpg", alt="Product one")
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
 
+				.col-lg-3.mix.featured.new
+					.featured-product__item
+						img(src="img/products/product-2.jpg", alt="Product one")
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+				.col-lg-3.mix.featured
+					.featured-product__item
+						img(src="img/products/product-3.jpg", alt="Product one")
+						.hover
+							.hover-content
+								a.button(href="#").button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+				.col-lg-3.mix.featured.new
+					.featured-product__item
+						img(src="img/products/product-4.jpg", alt="Product one")
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+	.promo.section
+		.container.container--full
+			.row
+				.col-xs-12.col-lg-6.no-padding
+					img(src='img/promo-img_1.jpg', alt='promo_1')
+					.promo-content
+							.heading-tag.heading-tag--blue exclusive
+							.promo-content__name Fishnet chair
+							.promo-content__details Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black
+							.button(href="#") order us
+								i.fa.fa-angle-right
+				.col-xs-12.col-lg-6.no-padding
+					.promo
+						img(src='img/promo-img_2.jpg', alt='promo_2')
+						.promo-content
+								.heading-tag.heading-tag--blue exclusive
+								.promo-content__name Fishnet chair
+								.promo-content__details Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black
+								.button(href="#") order us
+									i.fa.fa-angle-right
+	.promo.section
+		.container
+			.section__header Trending Products
+			.row
+				.col-md-4
+					.featured-product__item
+						img(src='img/products/product-11.jpg', alt='promo_1')
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+				.col-md-4
+					.featured-product__item
+						img(src='img/products/product-21.jpg', alt='promo_2')
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+				.col-md-4
+					.featured-product__item
+						img(src='img/products/product-31.jpg', alt='promo_2')
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+				.col-md-4
+					.featured-product__item
+						img(src='img/products/product-41.jpg', alt='promo_2')
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+				.col-md-4
+					.featured-product__item
+						img(src='img/products/product-5.jpg', alt='promo_2')
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+				.col-md-4
+					.featured-product__item
+						img(src='img/products/product-6.jpg', alt='promo_2')
+						.hover
+							.hover-content
+								.button.button--short
+									i.fa.fa-angle-right
+								.hover-content__name Fishnet Chair
+								.hover-content__details Seat and back with upholstery made of cold cure foam
+	.slider
+		.owl-carousel#bottom-slider
+			.row
+				.col-md-12.item
+					img(src='img/slider_bottom.jpg', alt='program1')
+					.d-none.d-md-block
+						.slider-content
+							.heading-tag.heading-tag--red hot-deal
+							.slider-content__name fishnet table
+							.slider-content__details Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black
+							.button(href="#") order us
+								i.fa.fa-angle-right
+			.row
+				.col-md-12.item
+					img(src='img/slider_bottom.jpg', alt='program1')
+					.d-none.d-md-block
+						.slider-content
+							.heading-tag.heading-tag--red hot-deal
+							.slider-content__name fishnet table
+							.slider-content__details Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black
+							.button(href="#") order us
+								i.fa.fa-angle-right
+			.row
+				.col-md-12.item
+					img(src='img/slider_bottom.jpg', alt='program1')
+					.d-none.d-md-block
+						.slider-content
+							.heading-tag.heading-tag--red hot-deal
+							.slider-content__name fishnet table
+							.slider-content__details Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black
+							.button(href="#") order us
+								i.fa.fa-angle-right
+	section
+		.exclusive-product
+			.container
+				.row
+					.col-md-6
+						.product-item
+							img(src='img/product_1_lg.jpg', alt='Product')
+							//- .d-none.d-md-block
+							.content
+								.heading-tag.heading-tag--blue exclusive
+								.content__name Fishnet Chair
+								.content__details Seat and back with upholstery made of cold cure foam. Steel frame, available in matt
+								.button(href="#") order us
+									i.fa.fa-angle-right
+					.col-md-6
+						.row
+							.col-md-6
+								.product-item
+									img(src='img/product_2_sm.jpg', alt='Product')
+							.col-md-6
+								.product-item
+									img(src='img/product_3_sm.jpg', alt='Product')
+							.col-md-6
+								.product-item
+									img(src='img/product_4_sm.jpg', alt='Product')
+							.col-md-6
+								.product-item
+									img(src='img/product_5_sm.jpg', alt='Product')
+	section
+		.app
+			.app-content
+				.heading-tag mobile app
+				.content__name.content__name--big find. follow. favorite.
+				.content__details.content__details--big Save your favorites and share your style.
+				img(src="img/icons/app-store.jpg", alt="app store icon")
+				img(src="img/icons/google-play.jpg", alt="google play icon")
+
+	footer
+		.container.section
+			.row
+				.col-md-4
+					.contacts
+						ul.contacts__list
+							li.contacts__list-item 
+								a 132A Bridge Road Richmond VIC Australia.
+							li.contacts__list-item Talk to us on 1300 132
+								a(mailto) info@interior.com
+				.col-md-4
+					.information
+						ul
+							li Sales terms
+							li Customer care
+							li Delivery
+				.col-md-4
+					.subscribe
+						ul
+							li Architect accounts
+							li Careers
+							li Exchanges & returns
+
+
+
+
+
+
+
+	//- .glyph.fs1
+	//- 	.clearfix.bshadow0.pbs
+	//- .icon-pinterest-with-circle
+	//- 			.mls
 
 	script(src="libs/jquery-3.3.1.min.js")
 	script(src="libs/owlcarousel2/owl.carousel.min.js")
 	script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js")
+	script(src="libs/mixitup2/jquery.mixitup.min.js")
+
 	//- My script
 	script(src="js/main.js")

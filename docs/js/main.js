@@ -16,6 +16,46 @@ $(document).ready(function(){
 	$("#top-slider").owlCarousel({
 		items:1,
 		rewind:true,
+		autoplay:true,
+		smartSpeed: 2000,
+		
+		fluidSpeed: 2000,
+		// nav:false,
+		dots:true,
+		navText:["",""],
+		responsive : {
+		// breakpoint from 0 up
+			0 : {
+				nav:false,
+				dots:true,
+
+			},
+		// breakpoint from 480 up
+			320 : {
+				nav:false,
+				dots:true,
+			},
+		// breakpoint from 768 up
+			768 : {
+				dots:true,
+
+			},
+		// breakpoint from 1200 up
+			1200 : {
+				dots:true,
+
+			}
+		}
+	});
+	
+	// Owl-carousel version 2
+	$("#bottom-slider").owlCarousel({
+		items:1,
+		rewind:true,
+		autoplay:true,
+		smartSpeed: 2000,
+		
+		fluidSpeed: 2000,
 		// nav:false,
 		dots:true,
 		navText:["",""],
@@ -58,6 +98,9 @@ $(document).ready(function(){
 	$('nav.navigation a').on("click", function(){
 		fnstart();
 	});
+
+	// mixItUp2 фильтр работ в портфолио
+	$('#featured-products').mixItUp();
 
 	// В ф-ии fnstart(); проверяем - если меню открыто (проверяем по наличию класса --active у кнопки pull)
 	// тогда убираем класс модификатор --active у кнопки pull
