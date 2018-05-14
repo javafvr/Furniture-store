@@ -17,11 +17,11 @@
 .hover {
   display: none;
   position: absolute;
-  -webkit-transition: display 0.5s ease-out;
-  -moz-transition: display 0.5s ease-out;
-  -ms-transition: display 0.5s ease-out;
-  -o-transition: display 0.5s ease-out;
-  transition: display 0.5s ease-out;
+  -webkit-transition: display 0.5s ease-in-out;
+  -moz-transition: display 0.5s ease-in-out;
+  -ms-transition: display 0.5s ease-in-out;
+  -o-transition: display 0.5s ease-in-out;
+  transition: display 0.5s ease-in-out;
 }
 .hover-content {
   text-align: center;
