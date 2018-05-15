@@ -1,0 +1,9 @@
+mixin product-card(number)
+	- var path = "img/products/product-"+number+".jpg";
+	.product-card
+		img(src=path, alt="product photo")
+		.hover
+			.button.button--short
+				i.fa.fa-angle-right
+			.hover__name Fishnet Chair
+			.hover__details Seat and back with upholstery made of cold cure foam

@@ -26,18 +26,23 @@
 nav.navigation {
   position: relative;
 }
-nav.navigation:after {
-  content: "";
+.search-block {
+  width: 0px;
+}
+.icon-search-1 {
   position: absolute;
   top: 7px;
   right: -28px;
-  height: 25px;
-  width: 25px;
-  background-image: url("../img/icons/search.png");
-  background-position: center;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  font-size: 23px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.icon-search-1:hover .search-block {
+  display: flex;
+  width: 150px;
 }
 ul {
   font-size: 0;

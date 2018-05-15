@@ -127,4 +127,18 @@ $(document).ready(function(){
 	});
 
 
+
+	// - VENDOR SNIPPET SEARCH
+	function expand() {
+	  $(".search").toggleClass("close");
+	  $(".input").toggleClass("square");
+	  if ($('.search').hasClass('close')) {
+	    $('.search-input').focus();
+	  } else {
+	    $('.search-input').blur();
+	  }
+	}
+	$('button').on('click', expand);
+
+
 });

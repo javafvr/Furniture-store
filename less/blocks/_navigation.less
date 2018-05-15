@@ -28,19 +28,45 @@
 nav.navigation{
 	position: relative;
 	
-	&:after{
-		content: "";
-		position: absolute;
-		top: 7px;
-		right: -28px;
-		height: 25px;
-		width: 25px;
-		background-image: url("../img/icons/search.png");
-		background-position: center;
-		-webkit-background-size: cover;
-		     -o-background-size: cover;
-		        background-size: cover;
-		}
+	// &:after{
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 7px;
+	// 	right: -28px;
+	// 	height: 25px;
+	// 	width: 25px;
+	// 	background-image: url("../img/icons/search.png");
+	// 	background-position: center;
+	// 	-webkit-background-size: cover;
+	// 	     -o-background-size: cover;
+	// 	        background-size: cover;
+	// 	}
+}
+
+.search-block{
+	// display: none;
+	width: 0px;
+	
+
+}
+
+.icon-search-1{
+	position: absolute;
+	top: 7px;
+	right: -28px;
+	font-size: 23px;
+	-webkit-transition: all 0.5s ease-in-out;
+	   -moz-transition: all 0.5s ease-in-out;
+	    -ms-transition: all 0.5s ease-in-out;
+	     -o-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+	&:hover .search-block{
+		display: flex;
+		width: 150px;
+		// right: -150px;
+		
+	}
+	
 }
 
 

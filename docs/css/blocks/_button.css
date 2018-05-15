@@ -9,6 +9,11 @@
   -webkit-border-radius: 40px;
   border-radius: 40px;
   box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 .button .fa {
   font-size: 18px;

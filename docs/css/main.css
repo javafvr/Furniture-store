@@ -118,6 +118,132 @@ textarea {
   min-width: 100%;
   margin: 0;
 }
+#content {
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  margin-left: 170px;
+  top: 7px;
+  right: -28px;
+  transform: translate(-50%, -50%);
+}
+#content.on {
+  -webkit-animation-name: in-out;
+  animation-name: in-out;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.search-input {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  background: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.search {
+  background: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 100%;
+  outline: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.search:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 26px;
+  margin-left: 17px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.close {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.close:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  margin-top: -1px;
+  margin-left: -13px;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.close:after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  background-color: #000;
+  margin-top: -1px;
+  margin-left: -13px;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.square {
+  box-sizing: border-box;
+  padding: 0 40px 0 10px;
+  width: 300px;
+  height: 50px;
+  border: 4px solid #FFFFFF;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+  -webkit-transition-delay: 0.4s, 0s, 0.4s;
+  transition-delay: 0.4s, 0s, 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
 .nav-bar {
   position: absolute;
   top: 0;
@@ -146,18 +272,23 @@ textarea {
 nav.navigation {
   position: relative;
 }
-nav.navigation:after {
-  content: "";
+.search-block {
+  width: 0px;
+}
+.icon-search-1 {
   position: absolute;
   top: 7px;
   right: -28px;
-  height: 25px;
-  width: 25px;
-  background-image: url("../img/icons/search.png");
-  background-position: center;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  font-size: 23px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.icon-search-1:hover .search-block {
+  display: flex;
+  width: 150px;
 }
 ul {
   font-size: 0;
@@ -208,6 +339,11 @@ ul li a:after {
   -webkit-border-radius: 40px;
   border-radius: 40px;
   box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 .button .fa {
   font-size: 18px;
@@ -260,44 +396,51 @@ ul li a:after {
   color: #000;
   background-color: #FFF;
 }
-.featured-product__item {
+.product-card {
   position: relative;
   margin-bottom: 30px;
 }
-.featured-product__item img {
+.product-card img {
   width: 100%;
 }
-.featured-product__item:hover .hover {
-  display: inline-block;
+.product-card:hover .hover {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #FFF;
+  background-color: rgba(255, 255, 255, 0.85);
   border: 1px solid #a1a1a2;
 }
 .hover {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   display: none;
+  top: 100%;
   position: absolute;
-  -webkit-transition: display 0.5s ease-in-out;
-  -moz-transition: display 0.5s ease-in-out;
-  -ms-transition: display 0.5s ease-in-out;
-  -o-transition: display 0.5s ease-in-out;
-  transition: display 0.5s ease-in-out;
-}
-.hover-content {
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
-  padding-top: 60px;
   padding-left: 33px;
   padding-right: 33px;
+  cursor: pointer;
 }
-.hover-content__name {
+.hover__name {
   color: #212121;
   margin-top: 20px;
   font-size: 22px;
   font-weight: 700;
 }
-.hover-content__details {
+.hover__details {
   color: #6C6C6C;
   margin-top: 20px;
   font-size: 14px;
@@ -406,6 +549,11 @@ section {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 60px;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .product-item {
   position: relative;
@@ -584,7 +732,7 @@ section {
   top: 46%;
   left: 112px;
   z-index: 10;
-  width: 490px;
+  max-width: 490px;
 }
 .promo-content__name {
   color: #000;
