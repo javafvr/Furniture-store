@@ -123,22 +123,41 @@ $(document).ready(function(){
 
 	//slide2id - плавная прокрутка по ссылкам внутри страницы
 	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
-		highlightSelector:"nav a"
+		// highlightSelector:"a"
+		highlightSelector:".nav a[rel='m_PageScroll2id']",
+		liveSelector:".nav a[rel='m_PageScroll2id']",
+		
+		// mPS2id.scrollTo.30
+		offset:"#nav-bar",
+
+
+    onStart:function(){
+        myCustomFn1();
+    },
+    onComplete:function(){
+       var yPos = myCustomFn2();
+       if(yPos>0) {
+       	$('#nav-bar').addClass('sticky-menu');
+       } else{
+       	$('#nav-bar').removeClass('sticky-menu');
+
+       }
+    }
+
+		
 	});
 
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 2){
+				$('#nav-bar').addClass('sticky-menu');
+			}else{
+				$('#nav-bar').removeClass('sticky-menu');
+			}
+	});
 
-
-	// - VENDOR SNIPPET SEARCH
-	function expand() {
-	  $(".search").toggleClass("close");
-	  $(".input").toggleClass("square");
-	  if ($('.search').hasClass('close')) {
-	    $('.search-input').focus();
-	  } else {
-	    $('.search-input').blur();
-	  }
-	}
-	$('button').on('click', expand);
+	function myCustomFn1(){console.log($('#nav-bar').scrollTop());}
+	
+	function myCustomFn2(){return (mPS2id.scrollTo.y);}
 
 
 });

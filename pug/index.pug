@@ -14,7 +14,7 @@ head
 	link(href="https://fonts.googleapis.com/css?family=Montserrat:100,300,700&amp;subset=cyrillic" rel="stylesheet")
 body
 	include ./mixins/_product-card.pug
-	.slider
+	.slider#home
 		.owl-carousel#top-slider
 			.row
 				.col-md-12.item
@@ -49,7 +49,7 @@ body
 
 		include ./sections/_navigation
 		
-	section
+	section#products
 		.featured-product
 			.container
 				.filter-block
@@ -70,7 +70,7 @@ body
 						+product-card(3)
 					.col-lg-3.mix.featured.new
 						+product-card(4)
-	section
+	section#history
 		.promo
 			.container.container--full
 				.row
@@ -110,7 +110,7 @@ body
 						+product-card(51)
 					.col-md-4
 						+product-card(61)
-	section
+	section#showroom
 		.slider
 			.owl-carousel#bottom-slider
 				.row

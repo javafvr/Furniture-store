@@ -1,5 +1,5 @@
 .nav-bar{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -12,6 +12,12 @@
 	-webkit-align-items: center;
 	        align-items: center;
 	z-index: 2;
+	
+		-webkit-transition: all 0.5s ease-in-out;
+		   -moz-transition: all 0.5s ease-in-out;
+		    -ms-transition: all 0.5s ease-in-out;
+		     -o-transition: all 0.5s ease-in-out;
+		        transition: all 0.5s ease-in-out;
 }
 
 .nav-bar__logo{
@@ -27,47 +33,33 @@
 
 nav.navigation{
 	position: relative;
-	
-	// &:after{
-	// 	content: "";
-	// 	position: absolute;
-	// 	top: 7px;
-	// 	right: -28px;
-	// 	height: 25px;
-	// 	width: 25px;
-	// 	background-image: url("../img/icons/search.png");
-	// 	background-position: center;
-	// 	-webkit-background-size: cover;
-	// 	     -o-background-size: cover;
-	// 	        background-size: cover;
-	// 	}
 }
 
-.search-block{
-	// display: none;
-	width: 0px;
+
+.wrapper{
+	display: flex;
 	
 
 }
 
-.icon-search-1{
-	position: absolute;
-	top: 7px;
-	right: -28px;
-	font-size: 23px;
-	-webkit-transition: all 0.5s ease-in-out;
-	   -moz-transition: all 0.5s ease-in-out;
-	    -ms-transition: all 0.5s ease-in-out;
-	     -o-transition: all 0.5s ease-in-out;
-	        transition: all 0.5s ease-in-out;
-	&:hover .search-block{
-		display: flex;
-		width: 150px;
-		// right: -150px;
+// .icon-search-1{
+// 	position: absolute;
+// 	top: 7px;
+// 	right: -28px;
+// 	font-size: 23px;
+// 	-webkit-transition: all 0.5s ease-in-out;
+// 	   -moz-transition: all 0.5s ease-in-out;
+// 	    -ms-transition: all 0.5s ease-in-out;
+// 	     -o-transition: all 0.5s ease-in-out;
+// 	        transition: all 0.5s ease-in-out;
+// 	&:hover .search-block{
+// 		display: flex;
+// 		width: 150px;
+// 		// right: -150px;
 		
-	}
+// 	}
 	
-}
+// }
 
 
 
@@ -99,7 +91,7 @@ ul li{
 		        transition: color 0.5s ease-in-out;
 		
 
-		&:hover{
+		&:hover, &:active{
 			font-size: 14px;
 			font-weight: bold;
 			color: #000;
@@ -114,6 +106,32 @@ ul li{
 			overflow: hidden;
 			visibility: hidden;
 		}
+		
+
 	}
 
+}
+		a.mPS2id-clicked{
+			font-size: 14px;
+			font-weight: bold;
+			color: #000;
+			border-bottom: 3px solid #000;
+
+				&:after{
+			display: block;
+			content: attr(title);
+			font-weight: bold;
+			height: 0;
+			overflow: hidden;
+			visibility: hidden;
+		}
+			
+
+		}
+.sticky-menu{
+	z-index: 20;
+	padding: 10px;
+	margin: 0;
+	background-color: #FFF;
+	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 }

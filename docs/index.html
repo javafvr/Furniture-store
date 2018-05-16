@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,700&amp;amp;subset=cyrillic" rel="stylesheet"/>
 </head>
 <body>
-  <div class="slider">
+  <div class="slider" id="home">
     <div class="owl-carousel" id="top-slider">
       <div class="row">
         <div class="col-md-12 item"><img src="img/slider-img.jpg" alt="program1"/>
@@ -52,24 +52,25 @@
         </div>
       </div>
     </div>
-    <div class="nav-bar">
+    <div class="nav-bar" id="nav-bar">
       <div class="nav-bar__logo"></div>
-      <nav class="navigation">
-        <ul id="nav_mobile-list">
-          <li class="nav__list-item"><a href="#" title="home">Home</a></li>
-          <li class="nav__list-item"><a href="#" title="products">Products</a></li>
-          <li class="nav__list-item"><a href="#" title="history">History</a></li>
-          <li class="nav__list-item"><a href="#" title="showroom">Showroom</a></li>
-          <li class="nav__list-item"><a href="#" title="contact">Contact</a></li>
-        </ul>
-        <form id="content">
-          <input class="search-input" type="text" name="search-input"/>
-          <button class="search" type="reset"></button>
+      <div class="wrapper">
+        <nav class="navigation">
+          <ul id="nav_mobile-list">
+            <li class="nav__list-item"><a href="#home" title="home">Home</a></li>
+            <li class="nav__list-item"><a href="#products" title="products">Products</a></li>
+            <li class="nav__list-item"><a href="#history" title="history">History</a></li>
+            <li class="nav__list-item"><a href="#showroom" title="showroom">Showroom</a></li>
+            <li class="nav__list-item"><a href="#contact" title="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <form id="search-form">
+          <input type="search" placeholder="Search"/>
         </form>
-      </nav>
+      </div>
     </div>
   </div>
-  <section>
+  <section id="products">
     <div class="featured-product">
       <div class="container">
         <div class="filter-block">
@@ -120,7 +121,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="history">
     <div class="promo">
       <div class="container container--full">
         <div class="row">
@@ -209,7 +210,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="showroom">
     <div class="slider">
       <div class="owl-carousel" id="bottom-slider">
         <div class="row">
@@ -318,7 +319,7 @@
       </div>
     </div>
   </section>
-  <footer>
+  <footer id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-3">

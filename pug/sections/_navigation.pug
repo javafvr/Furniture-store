@@ -1,20 +1,18 @@
 //- NAVIGATION BAR
-.nav-bar
+.nav-bar#nav-bar
 	.nav-bar__logo
-	nav.navigation
-		ul#nav_mobile-list
-			li.nav__list-item
-				a(href="#" title="home") Home
-			li.nav__list-item
-				a(href="#" title="products") Products
-			li.nav__list-item
-				a(href="#" title="history") History
-			li.nav__list-item
-				a(href="#" title="showroom") Showroom
-			li.nav__list-item
-				a(href="#" title="contact") Contact
-		//- .icon-search-1
-		//- input(placeholder="Search..").search-block
-		form#content
-			input(type="text" name="search-input").search-input
-			button(type="reset").search
+	.wrapper
+		nav.navigation
+			ul#nav_mobile-list
+				li.nav__list-item
+					a(href="#home" title="home") Home
+				li.nav__list-item
+					a(href="#products" title="products") Products
+				li.nav__list-item
+					a(href="#history" title="history") History
+				li.nav__list-item
+					a(href="#showroom" title="showroom") Showroom
+				li.nav__list-item
+					a(href="#contact" title="contact") Contact
+		form#search-form
+			input(type="search" placeholder="Search")
