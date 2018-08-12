@@ -52,11 +52,17 @@
       </div>
     </div>
     <nav class="navigation">
-      <div class="navigation__toggle-button clearfix" id="navigation-toggle">
-        <div class="nav-bar__logo"></div>
-        <form id="search-form">
-          <input type="search" placeholder="Search"/>
-        </form>
+      <div class="navigation__toggle-button"></div>
+      <div class="logo-wrapper" id="navigation-toggle">
+        <div class="logo clearfix">
+          <div class="logo__icon">
+            <div class="top-left rect"></div>
+            <div class="top-right rect"></div>
+            <div class="bottom-left rect"></div>
+            <div class="bottom-right rect"></div>
+          </div>
+        </div>
+        <div class="logo__text">interior</div>
       </div>
       <ul id="nav_mobile-list">
         <li class="nav__list-item"><a href="#home" title="home">Home</a></li>
@@ -65,6 +71,9 @@
         <li class="nav__list-item"><a href="#showroom" title="showroom">Showroom</a></li>
         <li class="nav__list-item"><a href="#contact" title="contact">Contact</a></li>
       </ul>
+      <form id="search-form">
+        <input type="search" placeholder="Search"/>
+      </form>
     </nav>
   </div>
   <section id="products">
