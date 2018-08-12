@@ -20,9 +20,14 @@
 }
 .content__name--big {
   margin-bottom: 18px;
-  font-size: 62px;
+  font-size: 48px;
   font-weight: 100;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .content__name--big {
+    font-size: 62px;
+  }
 }
 .content__details {
   font-size: 14px;
